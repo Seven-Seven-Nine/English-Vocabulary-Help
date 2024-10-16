@@ -1,0 +1,61 @@
+@import url("./header.css");
+@import url("./mainMenu.css");
+@import url("./dictionary.css");
+
+@font-face {
+    font-family: "RussoOne";
+    src: url("./font/RussoOne/RussoOne-Regular.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    transition: all 0.1s;
+}
+
+:root {
+    color-scheme: dark;
+    --main-color-panel: #141414;
+    --border-color: #2A6AE7;
+    --hover-element: #457CE8;
+    --background-color: #222222;
+    --animation-new-frame: new-frame 1s normal;
+    --arrow-hover: #E75656;
+}
+
+@keyframes new-frame {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "RussoOne";
+    font-size: 14pt;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 5%;
+    background-color: #232323;
+    border-bottom: 1px solid var(--border-color);
+}
+
+main {
+    box-sizing: border-box;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-panel);
+}

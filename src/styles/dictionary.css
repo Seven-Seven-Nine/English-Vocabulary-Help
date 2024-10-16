@@ -1,0 +1,59 @@
+#dictionary {
+    height: 100%;
+    width: 100%;
+    animation: var(--animation-new-frame);
+}
+
+.dop-panel {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dop-panel div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 1% 1%;
+}
+
+.dop-panel-ico-arrow svg {
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    &:hover path {
+        fill: var(--arrow-hover);
+    }
+}
+
+.dop-panel-ico-search {
+    text-align: right;
+    justify-content: right;
+}
+
+.dop-panel-ico-search svg {
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        cursor: pointer;
+    } 
+
+    &:hover path {
+        stroke: var(--hover-element);
+    }
+}
+
+.dop-panel-ico-search svg path {
+    stroke-width: 5px;
+}
+
+.main-panel {
+    height: 90%;
+}

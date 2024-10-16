@@ -1,0 +1,37 @@
+.header-div-ico-setting {
+    width: 1em;
+    text-align: left;
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-div-ico-setting svg:hover {
+    cursor: pointer;
+}
+
+.header-div-ico-setting svg:hover path {
+    fill: var(--hover-element);
+}
+
+.header-div-title {
+    width: 100%;
+    text-align: center;
+}
+
+.header-div-title h1 {
+    font-size: 14pt;
+    user-select: none;
+}
+
+.header-div-copyright {
+    width: 1em;
+    text-align: right;
+    padding: 0 1%;
+}
+
+.header-div-copyright p {
+    cursor: pointer;
+    user-select: none;
+}

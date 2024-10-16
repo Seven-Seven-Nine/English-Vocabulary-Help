@@ -1,0 +1,16 @@
+{
+  "name": "english-vocabulary-help",
+  "version": "1.0.0",
+  "description": "Декстопное приложение на веб-технологиях.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Данила",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^33.0.0",
+    "english-vocabulary-help": "file:"
+  }
+}
