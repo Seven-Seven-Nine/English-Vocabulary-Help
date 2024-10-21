@@ -1,5 +1,6 @@
 import Controllers from "./Controller.js";
 import Dictionary from "./Dictionary.js";
+import Sound from "../Sound.js";
 
 /**
  * Контроллер для главного меню.
@@ -34,6 +35,8 @@ export default class MainMenu extends Controllers{
      * @private
      */
     actionBtnLearn() {
+        Sound.soundNewFrame();
+        
         setTimeout(() => {
             
         }, 60)
@@ -44,6 +47,7 @@ export default class MainMenu extends Controllers{
      * @private
     */
    actionBtnDictionary() {
+        Sound.soundNewFrame();
         setTimeout(() => {
             new Dictionary('dictionary.html');
         }, 60)
@@ -54,6 +58,7 @@ export default class MainMenu extends Controllers{
      * @private
      */
     actionBtnSearch() {
+        Sound.soundNewFrame();
         setTimeout(() => {
             
         }, 60)
