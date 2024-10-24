@@ -35,7 +35,6 @@ export default class Controllers {
     init() {
         let htmldData = this.getDataHtml();
         this.addHtml(htmldData);
-        
         this.launch();
     }
 

@@ -3,7 +3,6 @@
 import FileLoader from "./FileLoader.js";
 import MainMenu from "./controllers/MainMenu.js";
 
-
 /**
  * @class
  */
@@ -23,7 +22,6 @@ export default class Main {
      */
     init() {
         new MainMenu('mainMenu.html');
-
         this.loadSvgFiles('./src/svg');
         this.addSvgInDom();
     }
@@ -72,4 +70,4 @@ export default class Main {
     }
 }
 
-export let main = new Main();
+export const main = new Main();
