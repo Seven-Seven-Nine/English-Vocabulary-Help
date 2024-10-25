@@ -58,4 +58,23 @@ export default class FileLoader {
             }
         }
     }
+
+    /**
+     * Чтение JSON файла из директории json, возвращает объект из json.
+     * @public @returns {object}
+     * @param {string} jsonName 
+     */
+    static loadJSON(jsonName) {
+        if (typeof jsonName !== 'string') {
+            throw new TypeError(`не правильный тип параметра 'jsonName' - ${typeof jsonName}`);
+        } else {
+            try {
+                let jsonDate = fs.readFileSync(`./src/json/${jsonName}`, 'utf-8');
+                let jsonObject = JSON.parse(jsonDate);
+                return jsonObject;
+            } catch (error) {
+                throw new Error(`Ошибка чтения файла: ${jsonName}.`);
+            }
+        }
+    }
 }

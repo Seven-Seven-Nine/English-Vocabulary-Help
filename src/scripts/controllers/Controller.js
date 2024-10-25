@@ -1,4 +1,5 @@
 import FileLoader from "../FileLoader.js";
+import { svgController } from "../Main.js";
 
 /**
  * Базовый класс для контроллеров.
@@ -35,12 +36,13 @@ export default class Controllers {
     init() {
         let htmldData = this.getDataHtml();
         this.addHtml(htmldData);
+        svgController.reloadLoadSVG();
         this.launch();
     }
 
     /**
      * Метод для выполнения дочерних классов.
-     * @public
+     * @protected
      */
     launch() {}
 
