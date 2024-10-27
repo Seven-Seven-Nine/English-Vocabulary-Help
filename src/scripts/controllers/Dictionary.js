@@ -70,7 +70,7 @@ export default class Dictionary extends Controllers {
         let idForBtn = -1;
 
         let mainPanel = document.getElementById('dictionary-main-panel');
-        
+
         let keysObject = Object.keys(this.words);
         let lengthObject = keysObject.length;
 
@@ -114,7 +114,7 @@ export default class Dictionary extends Controllers {
     }
     
     /**
-     * Кнопка добавления слова в словарь.
+     * Событие при клике на 'ico-add'.
      * @private
      * @param {string} idWord 
     */
