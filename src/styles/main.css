@@ -22,6 +22,7 @@
     --animation-new-frame: new-frame 1s normal;
     --arrow-hover: #E75656;
     --border-card: #747474;
+    --hover-card: #1A1A1A;
 }
 
 ::-webkit-scrollbar {

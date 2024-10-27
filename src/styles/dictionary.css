@@ -74,7 +74,7 @@
 
 .main-panel {
     height: 100%;
-    margin: 4em 0;
+    margin: 3em 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -86,18 +86,54 @@
     margin: 2%;
     border: 2px solid var(--border-card);
     border-radius: 10px;
-    padding: 2em 4em;
+    width: 25%;
+    max-width: 15em;
+    height: 17em;
+
+    &:hover {
+        background-color: var(--hover-card);
+        border: 2px solid var(--hover-element);
+    }
 }
 
 .dictionary-card div {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dictionary-card-title {
-    font-size: 16pt;
+    font-size: 30pt;
+    height: 30%;
+    align-items: flex-start !important;
 }
 
 .dictionary-card-translate {
     color: #B7B7B7;
+    font-size: 14pt;
+    height: 10%;
+}
+
+.dictionary-card-icon {
+    height: 60%;
+}
+
+.dictionary-card-icon div svg {
+    cursor: pointer;
+    width: 80px;
+
+    &:hover path {
+        stroke: var(--hover-element);
+    }
     
+    &:hover #ico-add-path-fill-1 {
+        stroke: none;
+        fill: var(--hover-element);
+    }
+    
+    &:hover #ico-add-path-fill-2 {
+        stroke: none;
+        fill: var(--hover-element);
+    }
 }
